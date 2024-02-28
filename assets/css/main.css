@@ -8577,12 +8577,10 @@ p.checkout-coupon input[type="text"]:focus {
 }
 
 .tpmap__wrapper {
-  position: absolute;
-  bottom: -25px;
-  left: 0;
-  top: 0;
-  width: 50%;
-  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 @media (max-width: 767px) {
