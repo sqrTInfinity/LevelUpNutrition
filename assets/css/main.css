@@ -48,14 +48,16 @@
 /*----------------------------------------*/
 
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&family=Schoolbell&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;600;700&display=swap");
 :root {
   /**
   @font family declaration
   */
-  --tp-ff-body: "Jost", sans-serif;
-  --tp-ff-heading: "Quicksand", sans-serif;
-  --tp-ff-p: "Jost", sans-serif;
-  --tp-ff-jost: "Jost", sans-serif;
+  --tp-ff-body: "Montserrat", sans-serif;
+  --tp-ff-heading: "Montserrat", sans-serif;
+  --tp-ff-p: "Montserrat", sans-serif;
+  --tp-ff-jost: "Montserrat", sans-serif;
   --tp-ff-font-family: Font Awesome 5 Pro;
   /**
   @color declaration
@@ -300,6 +302,12 @@ input::placeholder {
     common classes css start 
 ---------------------------------*/
 
+@media (max-width: 407px) {
+  a {
+    font-size: 12px;
+  }
+}
+
 .nav-hover-action:hover,
 .nav-hover-action:active {
   color: #96ae00;
@@ -315,9 +323,22 @@ input::placeholder {
   height: 100%;
   width: 1px;
   background-color: #c4c4c4;
-  left: -220px;
+  left: -190px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+@media (max-width: 1399px) {
+  .footer-col-2::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 1px;
+    background-color: #c4c4c4;
+    left: -140px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .w-img img {
@@ -6558,6 +6579,10 @@ input::placeholder {
   }
 }
 
+.tptestimonial__content {
+  height: 100%;
+}
+
 /*----------------------------------------*/
 
 /*  17. CHOOSE CSS
@@ -6747,6 +6772,7 @@ input::placeholder {
   height: 70px;
   width: 70px;
   border-radius: 50px;
+  object-fit: cover;
 }
 
 .tptestimonial__content p {
@@ -8572,6 +8598,12 @@ p.checkout-coupon input[type="text"]:focus {
   border-radius: 10px;
 }
 
+@media (max-width: 530px) {
+  .tpcontact__img img {
+    max-width: 100%;
+  }
+}
+
 .tpmap__box {
   position: relative;
 }
@@ -9200,7 +9232,7 @@ p.checkout-coupon input[type="text"]:focus {
   only screen and (min-width: 768px) and (max-width: 991px),
   (max-width: 767px),
   only screen and (min-width: 576px) and (max-width: 767px) {
-  .footer-col-4::before {
+  .footer-col-2::before {
     display: none;
   }
 }
