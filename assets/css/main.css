@@ -302,9 +302,14 @@ input::placeholder {
     common classes css start 
 ---------------------------------*/
 
-@media (max-width: 407px) {
+@media (max-width: 470px) {
   a {
     font-size: 12px;
+  }
+}
+@media (max-width: 379px) {
+  a {
+    font-size: 10px;
   }
 }
 
